@@ -42,6 +42,11 @@ app
 	})
 	.use("/api", routes);
 
+const PORT = process.env.PORT
+
+app.listen(PORT, () => {
+	console.log(`API listening on PORT ${PORT} `)
+})
 
 module.exports = app;
 
